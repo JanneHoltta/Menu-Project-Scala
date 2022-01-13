@@ -1,0 +1,25 @@
+Janne Hölttä 706825,tietotekniikka,toinen vuosi, 26.4.2021
+
+Olen tehnyt ohjelman joka hakee 4 eri Sodexon ravintolan lounaslistat. Ohjelmalla voi hakea lmepiruoan perusteella ruokia tai suodattaa pois ruokalajeja omien allergeenien perusteella.
+
+Ohjelma ajetaan Run-tiedosto ajaen, jonka jälkeen se kysyy käyttäjältä konsolissa, haluaako tämä etsiä ruokia allergeenien vai lempiruoan perusteella. Sen jälkeen tulee kirjoittaa lempiruoka tai allergeenit isolla kirjaimella kirjoitettuna.
+Sen jälkeen valitaan viikonpäivä, jonka jälkeen valitaan ravintola, jossa halutaan syödä. Vaihtoehdot ovat Alppila, Myyrmäki, Myllypuro ja Ikaalinen. Sitten ohjelma tulostaa ruoan jota on etsitty(jos sitä on olemassa) tai ruoat jotka eivät sisällä kyseisiä allergeenejä,jotka käyttäjä konsoliin kirjoitti.
+
+User-tiedostossa on tehtynä ravintoloiden nettisivujen HTML parsiminen ja eri funktioiden toteutukset. Run-tiedostossa on konsoliin tuleva tulostus lounaslistoista ja ohjeet mitä käyttäjän tulee konsoliin syöttää. Test-tiedostossa on muutama testi listojen käsittelyyn liittyen.
+
+Käytin HTML tiedostojen parsimiseen Scala scraperia ja Jsouppia. Funktiot on tehty käyttämällä match-case rakennetta, jokaiselle päivällä erikseen jokaisessa eri ravintolassa.
+
+Ohjelmaa voisi jatkaa keksimällä siihen lisäominaisuuksia ruokien etsimiseen. Testejä olisi voinut tehdä enemmän.
+
+Parasta ohjelmassa on se,että sitä on helppo käyttää,se toimii ja on käytänöllinen. Heikkoja kohtia voisi olla testit ja lisäominaisuuksien puuttuminen. Myös ohjelman lähdekoodi olisi voinut olla lyhyempi, jos olisi tehnyt eri tavalla. Paremman käyttöliittymän olisi voinut myös tehdä.
+
+Aloitin projektin suunnitelmalla, jonka jälkeen aloin etsimään tietoa HTML:n parsisimisesta. Sen jälkeen aloin miettimään funktioita ja lisäominaisuuksia siihen.
+
+Kaiken kaikkiaan olen tyytyväinen lopputulokseen. Ohjelma toimii ja tekee juuri niin kuin pitääkin, joka on pääasia.
+
+Lähteitä:
+
+https://github.com/ruippeixotog/scala-scraper
+https://www.lihaoyi.com/post/ScrapingWebsitesusingScalaandJsoup.html
+https://stackoverflow.com/
+

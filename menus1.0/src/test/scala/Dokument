@@ -1,0 +1,28 @@
+Janne Hölttä 706825,tietotekniikka,toinen vuosi, 26.4.2021
+
+Olen tehnyt ohjelman joka hakee 4 eri Sodexon ravintolan lounaslistat. Ohjelmalla voi hakea lmepiruoan perusteella ruokia tai suodattaa pois ruokalajeja omien allergeenien perusteella.
+
+Ohjelma ajetaan Run-tiedosto ajaen, jonka jälkeen se kysyy käyttäjältä konsolissa, haluaako tämä etsiä ruokia allergeenien vai lempiruoan perusteella. Sen jälkeen tulee kirjoittaa lempiruoka tai allergeenit isolla kirjaimella kirjoitettuna.
+Sen jälkeen valitaan viikonpäivä, jonka jälkeen valitaan ravintola, jossa halutaan syödä. Vaihtoehdot ovat Alppila, Myyrmäki, Myllypuro ja Ikaalinen. Sitten ohjelma tulostaa ruoan jota on etsitty(jos sitä on olemassa) tai ruoat jotka eivät sisällä kyseisiä allergeenejä,jotka käyttäjä konsoliin kirjoitti.
+
+User-tiedostossa on tehtynä ravintoloiden nettisivujen HTML parsiminen ja eri funktioiden toteutukset. Run-tiedostossa on konsoliin tuleva tulostus lounaslistoista ja ohjeet mitä käyttäjän tulee konsoliin syöttää. Test-tiedostossa on muutama testi listojen käsittelyyn liittyen.
+
+Käytin HTML tiedostojen parsimiseen Scala scraperia ja Jsouppia. Päädyin tähän, koska niistä löytyi eniten tietoa ja ne vaikuttivat kaikista selkeimmiltä. Parsin aina jokaisen eri päivän ruoat yhteen listaan. Vaihtoehtoinen tapa olisi ollut parsia jokainen ruoka erikseen, jolloin lähdekoodi olisi ollut paljon pidempi. Funktiot on tehty käyttämällä match-case rakennetta, jokaiselle päivällä erikseen jokaisessa eri ravintolassa. Tämä on minusta erittäin selkeä ja hyvä tapa käydä läpi jokainen ruoka-ateria eri päivinä läpi.
+
+Ohjelmaa voisi jatkaa keksimällä siihen lisäominaisuuksia ruokien etsimiseen. Testejä olisi voinut tehdä enemmän.
+
+Parasta ohjelmassa on se,että sitä on helppo käyttää,se toimii ja on käytänöllinen. Heikkoja kohtia voisi olla testit ja lisäominaisuuksien puuttuminen. Olisin voinut ottaa parempi huomioon tapaukset, jossa syäte on vääränlainen halutusta, esim viikonpäivien kohdalla. Paremman käyttöliittymän olisi voinut myös tehdä.
+Uusia lisäominaisuuksia olisi voinut olla esim.vegaanisuus, joka olisi ollut helppo tehdä katsomalla vain ruoan allergeenit ja printaamalla ne ruoat, joiden allergeenit olisivat olleet vegaanisia. Olisin voinut myös käsitellä virheellisiä syötteitä, joita käyttäjä antaa, vähän paremmin. Esim viikonpäivien kohdalla, jos käyttäjä olisi kirjoittanut viikonpäivän väärin tai vastaavaa olisi se voinut tulostaa errorin. Tämä olisi tehty laittamalla match case rakenteen viimeiseksi vaihtoehto jokin muu käyttämällä alaviivaa case_.
+Testejä en saanut toimimaan mutta hyviä testejä olisi voinut olla tarkistaa sisältääkö jokin ruoka tiettyä allergeenia.
+En ehtinyt tehdä graafista käyttöliittymää mutta se olisi ollut myös käyttäjän kannalta ehkä helpompi käyttää ja kivemman näköinen.
+
+Aloitin projektin suunnitelmalla, johon meni noin 5h.Sen jälkeen aloin etsimään tietoa HTML:n parsisimisesta. Päädyin käyttämään scala scraperia. Sen jälkeen aloin miettimään funktioita ja lisäominaisuuksia siihen. Ensiksi yritin saada vai ruoat ja allergeenit printattua, jonka jälkeen aloin kehittelemään lisäominaisuuksia. Tein metodit suosikkiruoka ja check. Sitten tein Run tiedoston, jossa kutsutaan metodeita, jotka tehtiin user tiedostoon.
+
+Kaiken kaikkiaan olen tyytyväinen lopputulokseen. Ohjelma toimii ja tekee juuri niin kuin pitääkin, joka on pääasia.
+
+Lähteitä:
+
+https://github.com/ruippeixotog/scala-scraper
+https://www.lihaoyi.com/post/ScrapingWebsitesusingScalaandJsoup.html
+https://stackoverflow.com/
+
